@@ -1,0 +1,395 @@
+:root {
+    --azulEscuro: #132235;
+    --azul: #285059;
+    --azulClaro: #6DDAD3;
+    --branco: #f2f2f2;
+
+    --fonteMontserrat: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0px;
+}
+
+html {
+    background-color: var(--azul);
+    
+}
+
+header {
+    background-color:var(--azulEscuro);
+    margin-bottom: 3.5%;
+}
+
+h1 {
+    display: inline-block;
+}
+
+.navegacao {
+    margin-left: 0;
+    padding-left: 69%;
+}
+
+
+nav {
+    display: inline;
+    position:absolute;
+    top: 5.5%;
+    width: 95vw;
+
+}
+
+nav a {
+    text-transform: uppercase;
+    color: var(--azulClaro);
+    font-weight: bold;
+    font-size: 0.65em;
+    text-decoration: none;
+    font-family: var(--fonteMontserrat);
+}
+
+nav a:hover{
+    color: var(--branco);
+}
+
+nav a:active{
+    color: var(--azul);
+}
+
+.caixamenu {
+    width: 50%;
+}
+
+.topo {
+    height: 10%;
+
+}
+
+#logo {
+    display: inline;
+    margin-left: -1%;
+    margin-top: 1%;
+    width: 40%;
+}
+
+.menu {
+    vertical-align: top;
+    display: inline;
+    width: 50%;
+    margin: 2%;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+.titulo1 {
+    display: inline-block;
+    margin-top: 2%;
+    width: 10%;
+    text-align: center;
+    font-family: var(--fonteMontserrat);
+    margin-left: 70%;
+    color: var(--azulEscuro);
+    border-style:ridge;
+    border-color: var(--azulEscuro);
+    vertical-align: top;
+}
+.titulo2 {
+    display:block;
+    width: 110%;
+    text-align: center;
+    font-family: var(--fonteMontserrat);
+    margin-left: -5.5%;
+    color: var(--branco);
+    border-style:ridge;
+    border-color: var(--azulEscuro);
+    background-color: var(--azul);
+
+}
+
+.p1 {
+    display: inline-block;
+    font-size: 250%;
+    font-family: var(--fonteMontserrat);
+    color: var(--branco);
+    width: 45%;
+    margin-left: 5%;
+    margin-top: 4%;
+    vertical-align: top;
+    text-align: center;
+}
+
+.p2 {
+    display: inline-block;
+    font-size: 250%;
+    
+    font-family: var(--fonteMontserrat);
+    color: var(--branco);
+    width: 45%;
+    margin-left: 5%;
+    margin-top: 4%;
+    vertical-align: top;
+    text-align: center;
+}
+
+.juntos {
+    display: inline-block;
+    margin-left: 5%;
+    width: 40%;
+    transform: scaleX(-1);
+}
+
+.casa {
+    display: inline-block;
+    margin-left: 5%;
+    width: 40%;
+    transform: scaleX(-1);
+}
+
+.social {
+    display: inline-block;
+    margin-left: 2%;
+    width: 30em;
+}
+
+.detalhes {
+    background-color: var(--azulClaro);
+    width: 100%;
+    height: 50px;
+}
+
+.detalhes2 {
+    background-color: var(--azulEscuro);
+    width: 100%;
+    height: 50px;
+}
+
+.caixa{
+    position: relative;
+	width: 100%;
+    background-color: var(--azulEscuro);
+}
+
+.caixa2{
+    position: relative;
+	width: 100%;
+    background-color: var(--azulClaro);
+}
+
+form {
+    display: inline-block;
+    width: 26,5%;
+    vertical-align: top;
+    background-color: var(--azulEscuro);
+    font-family: var(--fonteMontserrat);
+    color:var(--branco);
+    margin-left: 25.35%;
+    padding: auto;
+}
+
+.container {
+    padding: 4%;
+}
+input::placeholder {
+    color: var(--azul);
+}
+
+textarea::placeholder {
+    color: var(--azul);
+}
+
+fieldset {
+    border: 0px;
+}
+
+.grupo {
+    margin-left: 15px;
+}
+
+.campo {
+    display: inline-block;
+    width: 40%;
+    margin-bottom: 1em;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding-right: 9%;
+}
+
+.campoemail {
+    display: inline-block;
+    margin: auto auto auto auto;
+    
+    text-transform: uppercase;
+}
+
+.campomensagem {
+    display: block;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.campo label {
+    margin-bottom: 0.2em;
+    color: var(--branco);
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.botao {
+    width: 60%;
+    height: 25px;
+    border-radius: 0px;
+    font-family: var(--fonteMontserrat);
+    font-weight: bold;
+    outline: none;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-color: var(--azul);
+    color:var(--branco);
+}
+
+.botao:hover {
+    background-color: var(--azulClaro);
+}
+.botao:active {
+    color: var(--azulEscuro);
+    background-color: var(--branco);
+}
+
+#retornoEmail {
+    display: inline;
+    background-color: blcak;
+    font-family: var(--fonteMontserrat);
+    font-weight: bold;
+
+}
+
+footer {
+    width: 100%;
+}
+
+.espacamento {
+    text-align: bottom;
+}
+.rede {
+    display: inline;
+    margin-left: 20%;
+}
+
+.redeSocial {
+    margin-top:1%;
+    width: 5%;
+}
+
+@media screen and (max-width: 736px) {
+    
+    #logo {
+        display: block;
+        width: 100%;
+    }
+
+
+    header {
+        margin-bottom: 10%;
+    }
+    
+    nav {
+        display: inline;
+        position:relative;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    nav a {
+        font-size: 0.5em;
+    }
+    .navegacao {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .caixamenu {
+        width: 100%;
+    }
+
+    .topo {
+        height: 100%;
+
+    }
+
+
+    .titulo1 {
+        display: block;
+        width: 50%;
+        text-align: center;
+        font-family: var(--fonteMontserrat);
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        border-style:ridge;
+        border-color: var(--azulEscuro);
+    }
+
+    .p1{
+
+        display: inline-block;
+        font-size: auto;
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .p2{
+
+        display: inline-block;
+        font-size: auto;
+        width: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .juntos {
+        display: block;
+        width: 60%;
+        display: block;
+        margin: 0 auto 0 auto;
+        transform: scaleX(-1);
+    }
+
+    .casa {
+        display: block;
+        margin: 0 auto 0 auto;
+        width: 50%;
+    }
+
+    .social {
+        display: block;
+        margin: 0 auto 0 auto;
+        width: 80%;
+    }
+
+    .titulo2 {
+        display: block;
+        width: auto;
+        margin: 0 auto 0 auto;
+        color: var(--azulEscuro);
+        background-color: var(--azulClaro);
+    
+    }
+    form {
+        display: block;
+        width: 80.5%;
+        margin-left: 0;
+        padding: 2.5em;
+    }
+
+    .campomensagem {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}

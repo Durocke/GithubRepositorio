@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Fale Conosco - F4Life</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    <script language="Javascript">
+
+        function validacaoFormulario(field) {
+            usuario = field.value.substring(0, field.value.indexOf("@"));
+            dominio = field.value.substring(field.value.indexOf("@") + 1, field.value.length);
+
+            if ((usuario.length < 1) ||
+                (usuario.length > 32) ||
+                (dominio.length < 1) ||
+                (dominio.length > 16) ||
+                (usuario.search("@") != -1) ||
+                (dominio.search("@") != -1) ||
+                (usuario.search(" ") != -1) ||
+                (dominio.search(" ") != -1) ||
+                (dominio.search(".") == -1) ||
+                (dominio.indexOf(".") < 1) ||
+                (dominio.lastIndexOf(".") >= dominio.length - 1)) {
+                alert("Erro no envio: Endereço de mail inválido");
+                document.getElementById("retornoEmail").innerHTML = "<font color='red'>Email inválido </font>";
+                return;
+            }
+
+            var texto = formulario.mensagem;
+            if (texto.value == "") {
+                alert("Erro no envio: Insira uma mensagem");
+                return;
+            }
+
+            var primeiroNome = formulario.nome;
+            alert("Obrigado pelo contato, " + primeiroNome.value + "!");
+            formulario.submit();
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <header>
+        <section class="topo">
+            <div>
+                <h1><img id="logo" src="imagens/logo.png"></h1>
+            </div>
+            <nav>
+                <ul class="navegacao">
+                    <li class="menu"><a href="index.html">Home</a></li>
+                    <li class="menu"><a href="sobre.html">Quem Somos</a></li>
+                    <li class="menu"><a href="contato.html">Fale Conosco</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <main>
+        <div class="detalhes2">
+        </div>
+        <section class="caixa2">
+            <img src="imagens/social.svg" class="social">
+            <form name="formulario">
+                <h1 class="titulo2">Entre em Contato Conosco!</h1>
+                <section class="container">
+                    <fieldset class="grupo">
+                        <div class="campo">
+                            <label for="nome">Nome: </label>
+                            <input type="text" name="nome" id="nome" size="16" maxlength="20" placeholder="Nome"
+                                required>
+                        </div>
+                        <div class="campo">
+                            <label for="sobrenome">Sobrenome: </label>
+                            <input type="text" name="sobrenome" id="sobrenome" size="16" maxlength="50"
+                                placeholder="Sobrenome" required>
+                        </div>
+                    </fieldset>
+                    <fieldset class="grupo">
+                        <div class="campoemail">
+                            <label for="email">Email: </label>
+                            <div id="retornoEmail">
+                            </div>
+                            <input type="text" name="email" id="email" maxlength="52" placeholder="seu_email@email.com"
+                                required>
+                        </div>
+                    </fieldset>
+                    <fieldset class="grupo">
+                        <div class="campomensagem">
+                            <label for="mensagem">Mensagem:</label><br>
+                            <textarea id="mensagem" name="mensagem" rows="10" cols="30" maxlength="2000"
+                                placeholder="Mensagem exemplo de interesse em quarto de republica para 4 semestres."
+                                required></textarea>
+                        </div>
+                    </fieldset>
+
+                    <button class="botao" type="button" onclick="validacaoFormulario(formulario.email)">Enviar</button>
+                </section>
+            </form>
+
+        </section>
+        <div class="detalhes2">
+        </div>
+    </main>
+
+    <footer>
+        <ul class="espacamento">
+            <li class="rede"><a href="https://pt-br.facebook.com" target=_next"><img src="imagens/facelogo.png"
+                        class="redeSocial"></a></li>
+            <li class="rede"><a href="https://twitter.com" target=_next><img src="imagens/twitterlogo.png"
+                        class="redeSocial"></a></li>
+            <li class="rede"><a href="https://www.linkedin.com" target=_next><img src="imagens/linkelogo.png"
+                        class="redeSocial"></a></li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>
